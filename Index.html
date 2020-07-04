@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="main.css">	
+</head>
+<body>
+	<header>
+		<h2 id="title">News Agency</h2>
+	</header>
+	<div id="Menu">
+		<ul>
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="SignUp.html">Login</a></li>
+			<li><a href="ContactUs.html">ContactUs</a></li>
+		</ul>
+	</div>
+	<div id="leftbox">	
+		<div id="firstN">
+			<img id="scot" src="pic/scotland.jpg" alt="">
+			<h1 id="scotTXT"><a href="#">
+				وزرای اول اسکاتلند و ولز خواستار تمدید دوره انتقالی برکسیت شدند
+			</a></h1>
+			<h3>
+				نیکولا استورجن و مارک دریکفورد، وزرای اول اسکاتلند و ولز روز جمعه با ارسال نامه ای به بوریس جانسون، نخست وزیر بریتانیا خواستار تمدید دوره انتقالی برکسیت شدند.
+			</h3>
+		</div>
+		<ul id="dash">
+			<li>
+				<img src="pic/bank.jpg">
+				<p><a href="#">
+					خوشبینی بانک مرکزی ایالات متحده به بهبود شرایط اقتصادی در ماه‌های آینده
+				</a></p>
+			</li>
+			<li>
+				<img src="pic/fifa.jpg">
+				<p><a href="#">
+					مراسم معرفی بهترین‌های فیفا در سال ۲۰۲۰ آخر تابستان برگزار نمی‌شود
+				</a></p>
+			</li>
+			<li>
+				<img src="pic/iran.jpg">
+				<p><a href="#">
+					بانک مرکزی ایران نگهداری اسکناس ارز را برای بیش از ۶ ماه ممنوع کرد
+				</a></p>
+			</li>
+		</ul>
+	</div>
+	<div id="rightbox">
+		<ul>
+			<li id="clock"></li>
+			<li>
+				<img id="tabligh" src="pic/map26.jpg" alt="tabligh">
+			</li>			
+			<li id="sana">
+				<img src="pic/sana.png">
+			</li>
+		</ul>
+	</div>
+	<footer>
+		<h3>Copyright © 2017 News Agency. All Rights Reserved.</h3>
+	</footer>
+	<script>
+		var d = new Date();
+		var out = "Today is "+d.toDateString();
+						
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+	    var s = today.getSeconds();
+	    var time = h + ":" + m + ":" + s;
+		var result = out + " " + time ;
+		document.getElementById('clock').innerHTML = result ;
+
+	</script>
+</body>
+</html>
